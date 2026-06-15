@@ -2,21 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cosmos0111-cmyk.github.io/bp-t3b06-gy-shirts-rc-1/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://cosmos0111-cmyk.github.io/bp-t3b06-gy-shirts-rc-1/about.html</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cosmos0111-cmyk.github.io/bp-t3b06-gy-shirts-rc-1/blog.html</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cosmos0111-cmyk.github.io/bp-t3b06-gy-shirts-rc-1/posts/guide-001-16uorxt.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cosmos0111-cmyk.github.io/bp-t3b06-gy-shirts-rc-1/posts/guide-002-lxp6fi.html</loc>
@@ -25,8 +31,14 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://cosmos0111-cmyk.github.io/bp-t3b06-gy-shirts-rc-1/posts/qa-002-16uorxt.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://cosmos0111-cmyk.github.io/bp-t3b06-gy-shirts-rc-1/feed.xml</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
