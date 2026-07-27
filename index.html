@@ -1,596 +1,66 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-acid-yellow">
-    <title>가양 셔츠룸 추천 | 셔츠룸 No.1 | 010-6279-0862</title>
-    <meta name="description" content="가양 셔츠룸 추천. 겉멋만 있는 다른 곳과 차원이 다른 셔츠룸. 진짜 퍼포먼스, 진짜 분위기. 지금 바로 입장. 후회는 없다. 상담/예약 010-6279-0862">
-    <meta name="keywords" content="가양 셔츠룸, 가양 셔츠룸 추천, 셔츠룸, 가양유흥, 셔츠룸예약, 가양술집, 강서셔츠룸">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://gayang-shirt-guide.namanavi.com/">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="가양 셔츠룸 추천 | 셔츠룸 No.1">
-    <meta property="og:description" content="가양 셔츠룸 추천. 겉멋만 있는 다른 곳과 차원이 다른 셔츠룸. 진짜 퍼포먼스, 진짜 분위기. 지금 바로 입장. 후회는 없다.">
-    <meta property="og:url" content="https://gayang-shirt-guide.namanavi.com/">
-    <meta property="og:site_name" content="가양 셔츠룸 추천">
-    <meta property="og:locale" content="ko_KR">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="가양 셔츠룸 추천 | 셔츠룸 No.1">
-    <meta name="twitter:description" content="가양 셔츠룸 추천. 겉멋만 있는 다른 곳과 차원이 다른 셔츠룸. 진짜 퍼포먼스, 진짜 분위기. 지금 바로 입장. 후회는 없다.">
-
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "가양 셔츠룸 추천",
-  "description": "가양 지역 최고의 셔츠룸. 진짜 퍼포먼스, 진짜 분위기. 예약은 010-6279-0862",
-  "telephone": "+82-10-6279-0862",
-  "url": "https://gayang-shirt-guide.namanavi.com/",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "가양",
-    "addressRegion": "서울",
-    "addressCountry": "KR"
-  },
-  "openingHours": "Mo-Su 20:00-05:00",
-  "priceRange": "₩₩₩",
-  "areaServed": "가양동, 강서구, 서울"
-}</script>
-
-    <style>
-        /* === RESET & BASE === */
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { font-size: 16px; scroll-behavior: auto; }
-        body {
-            background-color: #111111;
-            color: #ffff00;
-            font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', monospace;
-            font-weight: 700;
-            line-height: 1.2;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-            padding: 0;
-            min-height: 100vh;
-            border: 4px solid #ffff00;
-            border-top: none;
-            border-bottom: none;
-        }
-
-        /* === TYPOGRAPHY === */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Impact', 'Arial Black', 'Helvetica Neue', sans-serif;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -0.02em;
-            color: #ffff00;
-        }
-        h1 { font-size: clamp(3.5rem, 12vw, 7rem); line-height: 0.9; margin-bottom: 0.5rem; text-shadow: 6px 6px 0 #00ff41; }
-        h2 { font-size: clamp(2.8rem, 8vw, 5rem); line-height: 1; margin: 1.5rem 0 1rem; border-bottom: 4px solid #00ff41; display: inline-block; padding-bottom: 4px; }
-        h3 { font-size: 1.8rem; margin: 1rem 0; }
-        p { font-size: 1.2rem; margin-bottom: 1rem; color: #d4ffd4; }
-        a { color: #00ff41; text-decoration: underline wavy #ffff00 3px; text-underline-offset: 6px; transition: all 0.1s; }
-        a:hover { background-color: #00ff41; color: #111111; text-decoration: none; }
-
-        /* === LAYOUT GRID (asymmetric full-bleed) === */
-        .container {
-            max-width: none;
-            padding: 24px;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
-        }
-
-        /* === BORDERS, TEXTURES, RAW === */
-        .box {
-            border: 4px solid #ffff00;
-            padding: 24px;
-            background: #111111;
-            box-shadow: 8px 8px 0 #00ff41;
-            transform: rotate(0deg);
-            transition: transform 0.1s ease;
-        }
-        .box:hover {
-            transform: rotate(-0.5deg) scale(1.01);
-        }
-        .skew-left {
-            transform: skewX(-2deg);
-            border-color: #00ff41;
-        }
-        .skew-right {
-            transform: skewX(2deg);
-            border-color: #ffff00;
-        }
-        .rotate-neg {
-            transform: rotate(-1deg);
-        }
-        .rotate-pos {
-            transform: rotate(1deg);
-        }
-
-        /* === HEADER & NAV === */
-        header {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 24px;
-            border-bottom: 4px solid #00ff41;
-            background: #0d0d0d;
-            position: relative;
-            z-index: 100;
-        }
-        .logo {
-            font-size: 2.2rem;
-            font-weight: 900;
-            font-family: 'Impact', sans-serif;
-            color: #00ff41;
-            background: #111;
-            padding: 8px 16px;
-            border: 4px solid #ffff00;
-            letter-spacing: 2px;
-            transform: rotate(-1deg);
-        }
-        .logo span {
-            color: #ffff00;
-        }
-
-        /* hamburger nav */
-        #menu-toggle { display: none; }
-        .nav-label {
-            display: none;
-            font-size: 2.5rem;
-            font-weight: 900;
-            color: #00ff41;
-            background: #111;
-            border: 4px solid #ffff00;
-            padding: 4px 16px;
-            cursor: pointer;
-            user-select: none;
-            transform: rotate(1deg);
-        }
-        .nav-menu {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-            list-style: none;
-        }
-        .nav-menu li a {
-            display: inline-block;
-            padding: 8px 16px;
-            font-size: 1.5rem;
-            font-weight: 900;
-            border: 3px solid #ffff00;
-            background: #111;
-            color: #ffff00;
-            text-decoration: none;
-            transform: skewX(-2deg);
-            transition: 0.1s;
-        }
-        .nav-menu li a:hover {
-            background: #00ff41;
-            color: #111;
-            border-color: #00ff41;
-            transform: skewX(2deg) scale(1.05);
-        }
-
-        @media (max-width: 768px) {
-            .nav-label { display: inline-block; }
-            .nav-menu {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                margin-top: 16px;
-                border-top: 4px solid #00ff41;
-                padding-top: 16px;
-            }
-            #menu-toggle:checked + .nav-label + .nav-menu {
-                display: flex;
-            }
-            header { flex-wrap: wrap; }
-        }
-
-        /* === HERO === */
-        .hero {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-            padding: 24px;
-            background: #111;
-            border: 4px solid #ffff00;
-            box-shadow: 12px 12px 0 #00ff41;
-            margin-bottom: 0;
-        }
-        .hero-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            transform: skewX(-1deg);
-        }
-        .hero-visual {
-            background: repeating-linear-gradient(
-                45deg,
-                #ffff00 0px, #ffff00 8px,
-                #111111 8px, #111111 16px
-            );
-            border: 4px solid #00ff41;
-            min-height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 6rem;
-            font-weight: 900;
-            color: #111;
-            text-shadow: 4px 4px 0 #00ff41;
-            transform: rotate(1deg);
-            position: relative;
-        }
-        .hero-visual::after {
-            content: '셔츠↗룸';
-            background: #00ff41;
-            color: #111;
-            padding: 8px 24px;
-            border: 4px solid #ffff00;
-            position: absolute;
-            bottom: -20px;
-            right: -20px;
-            font-size: 2rem;
-            transform: rotate(-3deg);
-        }
-        .hero-phone {
-            font-size: 2.5rem;
-            font-weight: 900;
-            color: #00ff41;
-            background: #111;
-            border: 4px solid #ffff00;
-            padding: 8px 24px;
-            display: inline-block;
-            margin-top: 24px;
-            transform: rotate(-1deg);
-        }
-        .hero-phone a {
-            color: inherit;
-            text-decoration: none;
-        }
-        .hero-phone a:hover {
-            background: transparent;
-            color: #ffff00;
-        }
-
-        @media (max-width: 768px) {
-            .hero { grid-template-columns: 1fr; }
-            .hero-visual { min-height: 200px; font-size: 4rem; }
-        }
-
-        /* === REVIEW CARDS (UGC) === */
-        .review-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 16px;
-        }
-        .review-card {
-            background: #0f0f0f;
-            border: 4px solid #ffff00;
-            padding: 24px;
-            box-shadow: 6px 6px 0 #00ff41;
-            transform: rotate(0deg);
-            transition: 0.1s;
-            position: relative;
-        }
-        .review-card:nth-child(even) {
-            transform: rotate(0.5deg);
-            border-color: #00ff41;
-            box-shadow: 6px 6px 0 #ffff00;
-        }
-        .review-card:hover {
-            transform: rotate(-0.5deg) scale(1.02);
-        }
-        .review-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 12px;
-            border-bottom: 2px dashed #00ff41;
-            padding-bottom: 8px;
-        }
-        .review-nick {
-            font-size: 1.4rem;
-            font-weight: 900;
-            color: #00ff41;
-        }
-        .review-date {
-            font-size: 0.9rem;
-            color: #bbffbb;
-            border: 2px solid #ffff00;
-            padding: 2px 8px;
-        }
-        .review-stars {
-            color: #ffff00;
-            font-size: 1.5rem;
-            letter-spacing: 4px;
-        }
-        .review-text {
-            font-size: 1.1rem;
-            color: #d4ffd4;
-            margin-top: 8px;
-            text-transform: none;
-            font-weight: 400;
-            line-height: 1.4;
-        }
-        .review-text strong {
-            color: #ffff00;
-            font-weight: 900;
-        }
-
-        /* === SECTIONS === */
-        section {
-            border: 4px solid #00ff41;
-            padding: 24px;
-            background: #111;
-            box-shadow: 8px 8px 0 #ffff00;
-        }
-        .highlight {
-            background: #ffff00;
-            color: #111;
-            padding: 4px 12px;
-            font-weight: 900;
-            display: inline-block;
-            transform: skewX(-2deg);
-            border: 3px solid #00ff41;
-        }
-        .btn-cta {
-            display: inline-block;
-            background: #00ff41;
-            color: #111;
-            font-size: 2rem;
-            font-weight: 900;
-            padding: 12px 48px;
-            border: 4px solid #ffff00;
-            text-decoration: none;
-            transform: rotate(-1deg);
-            box-shadow: 6px 6px 0 #111;
-            transition: 0.1s;
-        }
-        .btn-cta:hover {
-            background: #ffff00;
-            border-color: #00ff41;
-            transform: rotate(2deg) scale(1.05);
-            color: #111;
-        }
-
-        /* === FOOTER === */
-        footer {
-            border-top: 4px solid #00ff41;
-            padding: 24px;
-            text-align: center;
-            font-size: 1rem;
-            color: #797979;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            background: #0a0a0a;
-        }
-        footer a { color: #797979; text-decoration: underline #ffff00; }
-        footer a:hover { color: #ffff00; background: #111; }
-
-        /* === MISC === */
-        .text-accent { color: #00ff41; }
-        .text-secondary { color: #ffff00; }
-        .bg-stripes {
-            background: repeating-linear-gradient(-45deg, #ffff00 0px, #ffff00 6px, #111 6px, #111 12px);
-        }
-        .negative-margin {
-            margin-left: -24px;
-            margin-right: -24px;
-        }
-        @media (max-width: 768px) {
-            .negative-margin { margin-left: 0; margin-right: 0; }
-        }
-        .pill {
-            border: 3px solid #00ff41;
-            padding: 4px 16px;
-            font-weight: 900;
-            background: #111;
-            color: #ffff00;
-            display: inline-block;
-            transform: skewX(2deg);
-        }
-        .emoji-big { font-size: 4rem; filter: grayscale(100%) brightness(1.5); }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <title>가양 셔츠룸 추천 — 홈</title>
+  <meta name="description" content="가양 지역에서 셔츠룸을 찾는 독자에게, 언제 결정하고 언제 움직여야 하는지, 조건별 적합성을 명확히 제시하는 가이드. 빠른 판단을 돕는 체크포인트와 상황별 선택 기준을 제공합니다.">
+  <meta name="keywords" content="가양 셔츠룸, 셔츠룸 추천, 가양 옷가게, 가양 패션, 셔츠룸 선택">
+  <link rel="canonical" href="https://gayang-shirt-guide.namanavi.com/">
+  <meta property="og:title" content="가양 셔츠룸 추천 — 신속한 선택 가이드">
+  <meta property="og:description" content="가양 지역에서 셔츠룸을 선택할 때 필요한 시점·조건 별 체크리스트와 최적 선택법을 제시합니다.">
+  <meta property="og:url" content="https://gayang-shirt-guide.namanavi.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://gayang-shirt-guide.namanavi.com/og-image.jpg">
 </head>
 <body>
+  <header class="header">
+    <h1>가양 셔츠룸 선택 가이드</h1>
+    <p>당신이 바로 여기서 올바른 셔츠룸을 찾을 수 있도록, 구체적인 상황별 체크리스트와 실전 팁을 제공합니다.</p>
+  </header>
 
-<!-- HEADER -->
-<header>
-    <div class="logo"><span>가양</span> 셔츠<span>룸</span></div>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="nav-label">☰ 메뉴</label>
-    <ul class="nav-menu">
-        <li><a href="#">홈</a></li>
-        <li><a href="#">셔츠룸</a></li>
-        <li><a href="#">후기</a></li>
-        <li><a href="tel:+821062790862">전화예약</a></li>
-        <li><a href="#">위치</a></li>
-    </ul>
-</header>
+  <input type="checkbox" id="nav-toggle">
+  <label for="nav-toggle" class="menu-icon">&#9776;</label>
+  <nav>
+    <a href="/home">홈</a>
+    <a href="/regions">지역별 셔츠룸</a>
+    <a href="/style">스타일 가이드</a>
+    <a href="/contact">문의하기</a>
+  </nav>
 
-<!-- MAIN -->
-<main class="container">
+  <section class="container">
+    <h2>왜 가양 셔츠룸을 선택해야 할까</h2>
+    <p>가양은 최근 패션 트렌드와 거리 문화가 교차하는 핫스팟으로, 다양한 스타일을 실현할 수 있는 셔츠룸이 밀집해 있습니다. 특히 젊은층과 직장인 모두에게 맞는 맞춤형 서비스가 강점이며, 교통 접근성도 뛰어나 신속한 이동이 가능합니다.</p>
+    <p>하지만 이런 장점에도 불구하고 선택 과정에서 흔히 간과되는 요소가 있습니다. 매장 규모, 재고 업데이트 주기, 전문 스태프의 경험 등은 실제 이용 만족도에 큰 영향을 미칩니다. 따라서 단순히 “가양에 있다”는 이유만으로 매장을 고르기보다, 구체적인 상황과 목표에 맞춰 평가해야 합니다.</p>
 
-    <!-- HERO -->
-    <section class="hero" style="border: none; box-shadow: none; padding: 0;">
-        <div class="hero-content box skew-left">
-            <h1>가양<br>셔츠룸<br><span class="text-accent">추천</span></h1>
-            <p style="font-size:1.8rem; font-weight:900; color:#ffff00; border-left:6px solid #00ff41; padding-left:16px;">
-                진짜는 가렵지 않다
-            </p>
-            <p style="font-size:1.2rem; color:#d4ffd4;">다른 곳은 셔츠만 빌려줘. 여긴 분위기, 퍼포먼스, 찐리뷰까지. 가양 셔츠룸의 정점.</p>
-            <div class="hero-phone">
-                📞 <a href="tel:+821062790862">010-6279-0862</a>
-            </div>
-            <div style="margin-top:24px;">
-                <span class="pill">#가양셔츠룸추천</span>
-                <span class="pill" style="border-color:#ffff00; margin-left:8px;">#셔츠룸no.1</span>
-            </div>
-        </div>
-        <div class="hero-visual">
-            👔🔥
-        </div>
-    </section>
+    <h2>상황별 셔츠룸 선택 기준</h2>
+    <p><strong>1. 첫 방문·새로운 스타일 시도</strong> – 처음 가양에 와서 트렌디한 셔츠를 찾는 경우, 최신 컬렉션을 빠르게 순환하는 매장을 우선 고려하세요. 주간·월간 신상품 업데이트가 잦은 매장은 빠른 트렌드 반영이 가능하므로, SNS나 공식 홈페이지를 사전에 확인하는 것이 좋습니다.</p>
+    <p><strong>2. 비즈니스·정장용 셔츠</strong> – 정장용 셔츠는 품질과 핏이 핵심이므로, 맞춤 서비스와 정밀한 사이즈 측정을 제공하는 매장을 찾아야 합니다. 전문 재단사가 상주하거나, 실제 착용 후 피드백을 제공하는 매장이 신뢰할 만합니다.</p>
+    <p><strong>3. 대량 구매·단체 주문</strong> – 회사 복지나 이벤트용 셔츠를 대량으로 주문하려면, 도매 가격 적용과 빠른 납품이 가능한 매장을 선택해야 합니다. 사전 견적을 요청하고, 과거 거래 실적을 검증하는 과정을 거치는 것이 안전합니다.</p>
+    <p><strong>4. 빠른 구매·당일 배송</strong> – 급히 셔츠가 필요할 때는 재고가 풍부하고, 현장 결제 후 바로 포장해 주는 매장을 골라야 합니다. 일부 매장은 자체 물류 시스템을 갖추고 있어 당일 배송이 가능하니, “당일 출고” 표기를 확인하세요.</p>
 
-    <!-- INTRO SECTION (provocative tone) -->
-    <section class="skew-right">
-        <h2>🤬 셔츠룸?<br>여기가 끝판왕이다</h2>
-        <p style="font-size:1.6rem; font-weight:900; color:#00ff41;">
-            가양 셔츠룸 추천? 검색 그만해. 니가 찾던 바로 여기.
-        </p>
-        <p>
-            다른 데 가서 시간, 돈 낭비하지 마라. 진짜 퍼포먼스는 디테일에서 나온다. 
-            조명, 음악, 입장부터 퇴장까지 모든 게 다르다. 우리는 별점 5.0만 취급한다.
-            <strong class="highlight">★ 리뷰 0개면 걸러라 ★</strong> 우리는 쌓여있다.
-        </p>
-        <a href="tel:+821062790862" class="btn-cta">📞 지금 전화해</a>
-    </section>
-
-    <!-- UGC REVIEWS -->
-    <section>
-        <h2 style="border-bottom: none;">🎤 찐후기 <span style="font-size:1rem; color:#797979;">(가양 셔츠룸 추천)</span></h2>
-        <div class="review-grid">
-            <!-- card 1 -->
-            <div class="review-card">
-                <div class="review-header">
-                    <span class="review-nick">🔥 강서킹</span>
-                    <span class="review-date">2025-02-14</span>
-                </div>
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">
-                    “니들이 셔츠룸을 알어? 여기서 제대로 맛봤다. 분위기 개쩔고, 안주도 찐. 가양 셔츠룸 추천 하면 여기다. 대만족.”
-                </p>
-            </div>
-            <!-- card 2 -->
-            <div class="review-card">
-                <div class="review-header">
-                    <span class="review-nick">🕶️ 목동오빠</span>
-                    <span class="review-date">2025-02-10</span>
-                </div>
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">
-                    “처음 왔는데 완전 반함. 서비스, 분위기, 사람. 모든 게 완벽. 다른 곳은 이제 못 가겠다. <strong>가양 셔츠룸 추천</strong> 각인.”
-                </p>
-            </div>
-            <!-- card 3 -->
-            <div class="review-card">
-                <div class="review-header">
-                    <span class="review-nick">🐉 용용이</span>
-                    <span class="review-date">2025-02-05</span>
-                </div>
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">
-                    “친구 따라 왔다가 내가 단골됨.ㅋㅋ 퍼포먼스 찢는다. 가양에서 이만한 곳 없다. 강추.”
-                </p>
-            </div>
-            <!-- card 4 -->
-            <div class="review-card">
-                <div class="review-header">
-                    <span class="review-nick">💥 직진남</span>
-                    <span class="review-date">2025-01-28</span>
-                </div>
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">
-                    “솔직히 후기 많다고 다 좋은 거 아니다. 근데 여기는 후기보다 더 좋다. ㄹㅇ 찐. 셔츠룸의 기준을 바꿈.”
-                </p>
-            </div>
-            <!-- card 5 -->
-            <div class="review-card">
-                <div class="review-header">
-                    <span class="review-nick">👑 화곡대장</span>
-                    <span class="review-date">2025-01-20</span>
-                </div>
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">
-                    “가양 셔츠룸 추천 검색하면 다 여기라고 하더라. 왜 그런지 알겠다. 다음에도 또 올게.”
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHY US / PROVOCATIVE -->
-    <section class="skew-left">
-        <h2>💢 왜 하필 우리냐면</h2>
-        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:24px;">
-            <div class="box" style="box-shadow: 6px 6px 0 #ffff00;">
-                <span class="emoji-big">🎯</span>
-                <h3>퍼포먼스</h3>
-                <p>쇼맨십? 기본. 모든 게 라이브. 연출은 우리한테 맡겨라.</p>
-            </div>
-            <div class="box" style="box-shadow: 6px 6px 0 #00ff41;">
-                <span class="emoji-big">🍸</span>
-                <h3>프리미엄</h3>
-                <p>가양 셔츠룸 끝판왕. 입장부터 다른 세계.</p>
-            </div>
-        </div>
-        <div style="margin-top:24px; text-align:center;">
-            <span class="highlight" style="font-size:2rem;">예약은 010-6279-0862</span>
-            <p style="margin-top:16px;">오늘 바로 입장. 후회는 없다. 니가 주인공이다.</p>
-        </div>
-    </section>
-
-    <!-- LOCATION / CTA -->
-    <section>
-        <h2>📍 가양 셔츠룸<br>찾아오는 길</h2>
-
-
-
-
-
-<!-- PBN Recent Posts Feed Section -->
-<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>💡 GUIDE</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">셔츠룸 해결 방법 총정리 — 전문가가 알려주는 5가지 팁</h4>
-        <h2>포스트 DNA 52d6551e 관점: 의사결정 직전 사용자가 놓치는 조건을 역순으로 검토 구조: question-ladder — 쉬운 질문에서 전문 질문으로 깊어지는 구조 근거 방식: 전문 용어를 일상 언어로 풀어 설명 도입: 시간과 장소가 드러나는 관찰 기록으로</h2>
+    <h2>체크포인트 타임라인</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>조사 단계 (1~2일)</h3>
+        <p>온라인 리뷰와 SNS 포스트를 통해 매장 평판을 파악합니다. 특히 고객이 남긴 사진과 착용 후기 사진을 중점적으로 살펴보세요.</p>
       </div>
-      <a href="posts/guide-001-16uorxt.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>💡 GUIDE</span>
-          <time datetime="2026-06-11">2026-06-11</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">셔츠룸 해결 방법 총정리 — 전문가가 알려주는 5가지 팁</h4>
-        <h3>포스트 메타정보포스트 기획 테마: 셔츠룸 해결 방법 총정리 — 전문가가 알려주는 5가지 팁 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 마포 홍대 단체 가라오케 예약 가이드 | 합정 가라오케 정보 ## 제목 창작 지시관점: 의사결</h3>
+      <div class="timeline-item">
+        <h3>현장 방문 (3~4일)</h3>
+        <p>실제 매장을 방문해 직원 친절도, 재고 현황, 피팅룸 환경을 체크합니다. 이때 스마트폰으로 매장 내부 사진을 찍어 비교하면 후속 선택에 도움이 됩니다.</p>
       </div>
-      <a href="posts/guide-002-lxp6fi.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">가양 셔츠룸 추천 처음 알아볼 때 실제로 많이 묻는 질문 5가지</h4>
-        <h3>포스트 메타정보포스트 기획 테마: 가양 셔츠룸 추천 처음 알아볼 때 실제로 많이 묻는 질문 5가지 --- #### 영화 타일러 더든의 싱글 프레임 장면 전개 2019년 겨울, 나는 워싱턴 DC 서버실에서 작업을 했습니다. 온도가 42도까지 치솟았습니다. 이 극한</h3>
+      <div class="timeline-item">
+        <h3>구매·후기 (5일 이후)</h3>
+        <p>구매 후 2~3일 이내에 착용감과 품질을 평가하고, 필요 시 교환·반품 절차를 확인합니다. 만족도가 높다면 향후 재방문 및 주변 지인 추천 대상으로 기록해두세요.</p>
       </div>
-      <a href="posts/qa-002-16uorxt.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
     </div>
-  </div>
-</section>
+
+    <h2>FAQ</h2>
+    <p><strong>Q1. 가양에 있는 셔츠룸 중 어느 매장이 가장 빠른 배송을 제공하나요?</strong></p>
+    <p>A1. 배송 속도는 재고 상황에 따라 달라지지만, “당일 출고” 표기가 있는 매장은 대부분 자체 물류 체계를 갖추고 있어, 주문 당일에 바로 포장이 가능합니다. 직접 매장에 전화해 재고 확인 후 주문을 진행하면 확실합니다.</p>
+    <p><strong>Q2. 맞춤 셔츠를 주문할 때 가장 중요한 체크포인트는?</strong></p>
+    <p>A2. 몸 치수 측정 정확도, 원단 선택 폭, 그리고 시뮬레이션 서비스를 제공하는지 여부가 핵심입니다. 일부 매장은 3D 스캔을 이용해 가상 피팅을 제공하니, 이러한 부가 서비스를 활용하면 실수 없는 맞춤이 가능합니다.</p>
+    <p><strong>Q3. 대량 주문 시 할인 혜택을 받으려면 어떻게 해야 하나요?</strong></p>
+    <p>A3. 최소 주문 수량과 할인율이 매장마다 다르므로, 사전에 견적을 요청하고, 여러 매장의 제안을 비교하는 것이 가장 효율적입니다. 또한, 정기 거래 계약을 체결하면 추가적인 혜택을 받을 수 있습니다.</p>
+  </section>
 </body>
 </html>
